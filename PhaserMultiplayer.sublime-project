@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": ["local"]
+		},
+		{
+			"name": "client",
+			"path": "PhaserMultiplayer/client",
+			"folder_exclude_patterns": ["lib"]
+		},
+		{
+			"name": "resources",
+			"path": "PhaserMultiplayer/public/resources"
+		}
+	]
+}
