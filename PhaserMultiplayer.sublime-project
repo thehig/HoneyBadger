@@ -8,7 +8,7 @@
 		{
 			"name": "client",
 			"path": "PhaserMultiplayer/client",
-			"folder_exclude_patterns": ["lib"]
+			"folder_exclude_patterns": ["phaser"]
 		},
 		{
 			"name": "resources",
