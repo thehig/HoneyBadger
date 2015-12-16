@@ -1,4 +1,5 @@
 /// <reference path="../../typings/meteor/meteor.d.ts" />
+/// <reference path="../../typings/meteor/ironrouter.d.ts" />
 /// <reference path="../../typings/phaser/phaser.d.ts" />
 /// <reference path="../game/launcher.ts" />
 
@@ -6,7 +7,11 @@ eval('var HoneyBadger = (this.HoneyBadger || (this.HoneyBadger = {}))'); // http
 
 if (Meteor.isClient) {
 	Template['game'].rendered = function() {
-		console.log("Game template onLoad");
-		this.game = new HoneyBadger.Launcher();
+		if (!Meteor.userId()) {
+			Router.go('home');
+		}
+		else {
+			this.game = new HoneyBadger.Launcher();	
+		}		
 	}
 }

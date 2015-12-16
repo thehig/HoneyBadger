@@ -7,12 +7,12 @@
 		},
 		{
 			"name": "client",
-			"path": "PhaserMultiplayer/client",
+			"path": "HoneyBadger/client",
 			"folder_exclude_patterns": ["phaser"]
 		},
 		{
 			"name": "resources",
-			"path": "PhaserMultiplayer/public/resources"
+			"path": "HoneyBadger/public/resources"
 		}
 	]
 }
